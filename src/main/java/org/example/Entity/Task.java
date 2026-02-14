@@ -89,6 +89,10 @@ public class Task {
         this.title = title;
     }
 
+    public String getTitle() {
+        return this.title;
+    }
+
     public void setDescription(String description) {
         this.description = description;
     }

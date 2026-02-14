@@ -17,7 +17,7 @@ public class TaskManager {
     public TaskManager(TaskPersistance taskPersistance){
         this.taskPersistance = taskPersistance;
     }
-    void createTask(String title , String description,Date duedate, Priority priority,User assigned){
+    void createTask(String title , String description,LocalDate duedate, Priority priority,User assigned){
         Task task = new Task.Builder()
                 .withTitle("Fix Login Bug")
                 .withDescription("Resolve null pointer in login flow")
